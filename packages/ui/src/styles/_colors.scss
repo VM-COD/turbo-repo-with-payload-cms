@@ -1,0 +1,190 @@
+:root {
+    /*Start: Text colors*/
+    --brand-accent-color: #E756A4;
+    --brand-enhanced-accent-color: #E9357B;
+
+    --primary-text-color-dark: #1E1E48;
+    --primary-text-color-light: #FFFFFF;
+
+    --secondary-text-color-dark: #4B4B63;
+    --secondary-text-color-light: #BBBBC8;
+
+    --tertiary-text-color-dark: #6D6D80;
+    --tertiary-text-color-light: #FFFFFF99;
+
+    --disabled-text-color-dark: #BBBBC4;
+    --disabled-text-color-light: #FFFFFF66;
+
+    --interactive-text-color-dark: #E9357B;
+    --interactive-text-color-light: #ED5993;
+    /*End: Text colors*/
+
+    /*Start: Surface background colors*/
+    --surface-bg-flat-color: #FFFFFF;
+    --surface-bg-sunken-color: #F3F3F4;
+    --surface-bg-elevated-color: #FFFFFF;
+    --surface-bg-brand-color: #E9357B1A;
+
+    --surface-bg-dark-color: #1E1E48;
+    --surface-bg-dark-elevated-color: #404063;
+    --surface-bg-scrim-layer-color: #1E1E484D;
+    /*End: Surface background colors*/
+
+    /*Start: Border colors*/
+    --border-color-dark: #1E1E4826;
+    --border-color-light: #FFFFFF26;
+    /*End: Border colors*/
+
+    /*Start: Button colors*/
+    --primary-button-bg-color: #E9357B;
+    --primary-button-text-color: #FFFFFF;
+    --primary-button-disabled-text-color: #6D6D80;
+    --primary-button-hover-bg-color: #ED5D95;
+    --primary-button-pressed-bg-color: #BD2D6A;
+    --primary-button-disabled-bg-color: #CFCFD3;
+
+    --primary-text-only-button-text-color: #E9357B;
+    --primary-text-only-button-hover-text-color: #ED5D95;
+    --primary-text-only-button-pressed-text-color: #BD2D6A;
+    --primary-text-only-button-disabled-text-color: #bbbbc4;
+
+    --negative-primary-button-bg-color: #E43F3F;
+    --negative-primary-button-text-color: #FFFFFF;
+    --negative-primary-button-disabled-text-color: #6D6D80;
+    --negative-primary-button-hover-bg-color: #E96565;
+    --negative-primary-button-pressed-bg-color: #B9353A;
+    --negative-primary-button-disabled-bg-color: #CFCFD3;
+
+    --negative-primary-text-only-button-text-color: #E43F3F;
+    --negative-primary-text-only-button-disabled-text-color: #6D6D80;
+    --negative-primary-text-only-button-hover-text-color: #E96565;
+    --negative-primary-text-only-button-pressed-text-color: #B9353A;
+    --negative-primary-text-only-button-disabled-text-color: #bbbbc4;
+
+    --secondary-button-bg-color: #FFFFFF;
+    --secondary-button-text-color: #E9357B;
+    --secondary-button-hover-bg-color: #F3F3F4;
+    --secondary-button-pressed-bg-color: #E7E7E9;
+    --secondary-button-disabled-bg-color: #FFFFFF;
+
+    --secondary-text-only-button-text-color: #1E1E48;
+    --secondary-text-only-button-hover-text-color: #E9357B;
+    --secondary-text-only-button-pressed-text-color: #BD2D6A;
+    --secondary-text-only-button-disabled-text-color: #bbbbc4;
+
+    --negative-secondary-button-bg-color: #FFFFFF;
+    --negative-secondary-button-text-color: #E43F3F;
+    --negative-secondary-button-hover-bg-color: #F3F3F4;
+    --negative-secondary-button-pressed-bg-color: #E7E7E9;
+    --negative-secondary-button-disabled-bg-color: #FFFFFF;
+
+    --negative-secondary-text-only-button-text-color: rgba(228, 63, 63, 0.2);
+    --negative-secondary-text-only-button-hover-text-color: rgba(233, 101, 101, 0.2);
+    --negative-secondary-text-only-button-pressed-text-color: rgba(185, 53, 58, 0.2);
+    --negative-secondary-text-only-button-disabled-text-color: rgba(187, 187, 196, 0.2);
+
+    --tertiary-button-bg-color: #FFFFFF;
+    --tertiary-button-text-color: #1E1E48;
+    --tertiary-button-hover-bg-color: #F3F3F4;
+    --tertiary-button-pressed-bg-color: #E7E7E9;
+    --tertiary-button-disabled-bg-color: #fff;
+
+    --tertiary-text-only-button-text-color: #6D6D80;
+    --tertiary-text-only-button-hover-text-color: #E9357B;
+    --tertiary-text-only-button-pressed-text-color: #BD2D6A;
+    --tertiary-text-only-button-disabled-text-color: #bbbbc4;
+
+    --negative-tertiary-button-bg-color: #FFFFFF;
+    --negative-tertiary-button-text-color: #E43F3F;
+    --negative-tertiary-button-hover-bg-color: #F3F3F4;
+    --negative-tertiary-button-pressed-bg-color: #E7E7E9;
+    --negative-tertiary-button-disabled-bg-color: #F3F3F4;
+
+
+    --negative-tertiary-text-only-button-text-color: rgba(228, 63, 63, 0.2);
+    --negative-tertiary-text-only-button-hover-text-color: rgba(233, 101, 101, 0.2);
+    --negative-tertiary-text-only-button-pressed-text-color: rgba(185, 53, 58, 0.2);
+    --negative-tertiary-text-only-button-disabled-text-color: rgba(187, 187, 196, 0.2);
+
+    --button-focus-outline-web: rgba(233, 53, 123, 0.2);
+    --button-focus-outline-mobile: rgba(231, 86, 164, 0.2);
+    --button-focus-outline-destructive: rgba(228, 63, 63, 0.2);
+    /*End: Button colors*/
+
+    /*Start: Link colors*/
+    --link-primary-color: #E9357B;
+    --link-primary-hover-color: #ED5D95;
+    --link-primary-pressed-color: #BD2D6A;
+
+    --link-secondary-color: #FBD7E5;
+    --link-secondary-hover-color: #FBDfEa;
+    --link-secondary-pressed-color: #F2D5E1;
+    --link-secondary-disabled-color: #F1F1F3;
+
+    --link-negative-primary-color: #E43F3F;
+    --link-negative-primary-hover-color: #E96565;
+    --link-negative-primary-pressed-color: #B9353A;
+    /*End: Link colors*/
+
+    /*Start: Background and Foreground colors*/
+    --error-text-color: #E43F3F;
+    --error-box-shadow-color: #E43f3f33;
+    --warning-text-color: #E67F4C;
+    --success-text-color: #009933;
+    --informative-text-color: #9747FF;
+
+    --error-bg-color: #F8CFCF;
+    --warning-bg-color: #F9DFD2;
+    --success-bg-color: #E3F7EA;
+    --informative-bg-color: #E5D1FF;
+    /*End: Background and Foreground colors*/
+
+    /*Start: Input colors*/
+    --input-border-color: #1E1E4826;
+    --input-box-shadow-color: #E9357B33;
+    /*End: Input colors*/
+
+    /*Start: Otp input colors*/
+    --otp-input-box-shadow-color: #E9357B33;
+    /*End: Otp input colors*/
+
+    /* Start: Icon With details */
+    --icon-with-details-subheading-color: #FFFFFFA0;
+    /* End: Icon With details */
+
+    /*Start: Modal colors*/
+    --modal-backdrop-color: #1E1E48CC;
+    --modal-box-shadow-color: #0000001F;
+    /*End: Modal colors*/
+
+    /*Start: Navigation */
+    --navigation-border-color: #1E1E4826;
+    /*Start: Navigation */
+
+    /*Start: Landing Section*/
+    --landing-section-course-button-border-color: #1E1E4833;
+    --landing-section-links-separator-color: #D8D8D8;
+    --landing-section-search-wrapper-box-shadow-color: #00000005;
+    /*End: Landing Section*/
+
+    /*Start: Navigate Courses Section*/
+    --input-field-dark-bg-color: #462E4B;
+    --input-field-dark-border-color: #564B61;
+    /*End: Navigate Courses Section*/
+
+    /*Start: Card colors*/
+    --card-box-shadow-color: #0000000D;
+    /*End: Card colors*/
+
+    /*Start: Tag colors*/
+    --tag-surface-bg-brand-color: #E9357B1A;
+    /*End: Tag colors*/
+
+    /*Start: Range slider*/
+    --range-slider-track-bg-color: #DBDBDC;
+    /*End: Range slider*/
+
+    /*Start:  Notification card color*/
+    --notification-card-border-color: #1E1E481A;
+    /*End:  Notification card color*/
+}

@@ -1,0 +1,56 @@
+$spacers: (
+    3: 12px,
+    9: 36px
+);
+
+$sides: (
+    top,
+    bottom,
+    left,
+    right
+);
+
+$axises: (
+    x,
+    y
+);
+
+@each $key, $value in $spacers {
+    @each $side in $sides {
+        $first_letter_of_side: str-slice($side, 0, 1);
+
+        .m#{$first_letter_of_side}-#{$key} {
+            margin-#{$side}: #{$value};
+        }
+
+        .p#{$first_letter_of_side}-#{$key} {
+            padding-#{$side}: #{$value};
+        }
+    }
+
+    @each $axis in $axises {
+        @if $axis == y {
+            .m#{$axis}-#{$key} {
+                margin-top: #{$value};
+                margin-bottom: #{$value};
+            }
+
+            .p#{$axis}-#{$key} {
+                padding-top: #{$value};
+                padding-bottom: #{$value};
+            }
+        }
+
+        @if $axis ==x {
+            .m#{$axis}-#{$key} {
+                margin-left: #{$value};
+                margin-right: #{$value};
+            }
+
+            .p#{$axis}-#{$key} {
+                padding-left: #{$value};
+                padding-right: #{$value};
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 1025px,
+  lg: 1441px,
+  xl: 1921px,
+) !default;
+
+$screen-xs: map-get($grid-breakpoints, sm);
+$screen-sm: map-get($grid-breakpoints, sm);
+$screen-md: map-get($grid-breakpoints, md);
+$screen-lg: map-get($grid-breakpoints, lg);
+$screen-xl: map-get($grid-breakpoints, xl);
+
+@mixin media($point) {
+  @if $point==xs {
+    @media screen and (max-width: $screen-xs - 1) {
+      @content;
+    }
+  } @else if $point==sm {
+    @media screen and (min-width: $screen-sm) {
+      @content;
+    }
+  } @else if $point==md {
+    @media screen and (min-width: $screen-md) {
+      @content;
+    }
+  } @else if $point==lg {
+    @media screen and (min-width: $screen-lg) {
+      @content;
+    }
+  } @else if $point==xl {
+    @media screen and (min-width: $screen-xl) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: $point) {
+      @content;
+    }
+  }
+}
+
+.hidden-xs {
+  @include media(xs) {
+    display: none !important;
+  }
+}
+
+.hidden-sm {
+  @include media(sm) {
+    display: none !important;
+  }
+}
+
+.hidden-md {
+  @include media(md) {
+    display: none !important;
+  }
+}
+
+.hidden-lg {
+  @include media(lg) {
+    display: none !important;
+  }
+}
+
+.visible-sm {
+  @media screen and (max-width: $screen-sm - 1) {
+    display: none !important;
+  }
+}
+
+.visible-md {
+  @media screen and (max-width: $screen-md - 1) {
+    display: none !important;
+  }
+}
+
+.visible-lg {
+  @media screen and (max-width: $screen-lg - 1) {
+    display: none !important;
+  }
+}
