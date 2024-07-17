@@ -13,6 +13,7 @@ export default buildConfig({
   admin: {
     user: Users.slug,
     bundler: webpackBundler(),
+    css: path.resolve(__dirname, './styles/base.scss'),
     components: {
       views: {
         Dashboard
