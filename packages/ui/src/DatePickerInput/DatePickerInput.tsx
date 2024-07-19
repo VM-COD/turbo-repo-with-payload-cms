@@ -9,6 +9,7 @@ import './DatePickerInput.scss';
 import { IDatepickerProps, Value, ValuePiece } from './DatePickerInput.model';
 import 'react-date-picker/dist/DatePicker.css';
 import 'react-calendar/dist/Calendar.css';
+import './../styles.css'
 import { DatePicker as ReactDatePicker } from 'react-date-picker';
 // import { defaultDatePickerFormat } from '../../shared/days';
 

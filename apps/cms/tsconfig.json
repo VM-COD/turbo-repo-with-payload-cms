@@ -1,37 +1,118 @@
+// {
+//   "compilerOptions": {
+//     "composite": false,
+//     "esModuleInterop": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "noEmit": true,
+//     "inlineSources": false,
+//     "isolatedModules": true,
+//     "module": "NodeNext",
+//     "moduleResolution": "NodeNext",
+//     "noUnusedLocals": false,
+//     "noUnusedParameters": false,
+//     "preserveWatchOutput": true,
+//     "skipLibCheck": true,
+//     "strict": true,
+//     "strictNullChecks": true,
+//     "plugins": [{ "name": "next" }],
+//     "allowJs": true,
+//     "declaration": false,
+//     "declarationMap": false,
+//     "incremental": true,
+//     "outDir": "./dist",
+//     "lib": ["dom", "dom.iterable", "esnext"],
+//     "resolveJsonModule": true,
+//     "target": "es5",
+//     "jsx": "react-jsx",
+//     "paths": {
+//       "payload/generated-types": ["./src/payload-types.ts"],
+//        "@/*": ["./src/*"]
+//     }
+//   },
+//   "include": ["src"],
+//   "exclude": ["node_modules", "dist", "build"],
+//   "ts-node": {
+//     "transpileOnly": true,
+//     "swc": true
+//   }
+// }
+
 {
   "compilerOptions": {
-    "composite": false,
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "strict": false,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "inlineSources": false,
-    "isolatedModules": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "preserveWatchOutput": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "plugins": [{ "name": "next" }],
-    "allowJs": true,
-    "declaration": false,
-    "declarationMap": false,
-    "incremental": true,
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "resolveJsonModule": true,
-    "target": "es5",
-    "jsx": "react-jsx",
     "paths": {
-      "payload/generated-types": ["./src/payload-types.ts"],
-       "@/*": ["./src/*"]
-    }
+      "payload/generated-types": [
+        "./src/payload-types.ts"
+      ],
+      "node_modules/*": [
+        "./node_modules/*",
+      ],
+      "@repo/ui/*": ["./../../packages/ui/dist/*"]
+    },
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "build"],
+  "include": [
+    "src",
+    // "**/*.ts",
+    // "**/*.tsx",
+    // "./../../node_modules/@repo/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+  ],
   "ts-node": {
     "transpileOnly": true,
     "swc": true
   }
 }
+
+
+// {
+//   "compilerOptions": {
+//     "esModuleInterop": true,
+//     "module": "NodeNext",
+//     "moduleResolution": "NodeNext",
+//     "skipLibCheck": true,
+//     "strict": false,
+//     "allowJs": true,
+//     "lib": ["dom", "dom.iterable", "esnext"],
+//     "target": "es6",
+//     "jsx": "react-jsx",
+//     "outDir": "./dist",
+//     // "plugins": [{ "name": "next" }],
+//     // "composite": false,
+//     // "isolatedModules": true,
+//     "noEmit": true,
+//     "declaration": false,
+//     "declarationMap": false,
+//     "resolveJsonModule": true,
+//     "paths": {
+//       "payload/generated-types": ["./src/payload-types.ts"],
+//        "@/*": ["./src/*"]
+//     }
+//   },
+//   "include": ["src"],
+//   "exclude": ["node_modules", "dist", "build"],
+//   "ts-node": {
+//     "transpileOnly": true,
+//     "swc": true
+//   }
+// }
+

@@ -1,15 +1,16 @@
 import React from 'react';
 import Card from "@repo/ui/card";
-import DatePickerInput from '@repo/ui/datepicker';
+// import DatePickerInput from '@repo/ui/datepicker';
 
 function Dashboard() {
+  // const  Card = await import('@repo/ui/card');
   return (
     <div className="dashboard">
       <div className="gutter--left gutter--right dashboard__wrap">
         <div className="dashboard__group">
           <h2 className="dashboard__label pl-8">Dashboard</h2>
           <Card />
-          <DatePickerInput></DatePickerInput>
+          {/* <DatePickerInput></DatePickerInput> */}
         </div>
       </div>
     </div>
