@@ -1,0 +1,23 @@
+@mixin size($width) {
+    width: $width;
+}
+
+svg {
+    fill: red;
+
+    &.xs {
+        @include size(50px);
+    }
+
+    &.sm {
+        @include size(70px);
+    }
+
+    &.md {
+        @include size(90px);
+    }
+
+    &.lg {
+        @include size(110px);
+    }
+}
