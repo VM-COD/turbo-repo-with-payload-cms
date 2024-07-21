@@ -1,0 +1,74 @@
+@import '../../styles/mixins/media-queries';
+
+.form-field-wrapper {
+  label {
+    &.required {
+      &::after {
+        content: '*';
+        color: var(--primary-text-only-button-text-color);
+        position: relative;
+        left: 2px;
+      }
+    }
+  }
+
+  .form-field-element-wrapper {
+    &:hover {
+      box-shadow: 0 0 0 0.4rem var(--input-box-shadow-color);
+    }
+
+    &:focus-within {
+      border-color: var(--interactive-text-color-dark);
+      box-shadow: 0 0 0 0.4rem var(--input-box-shadow-color);
+      outline: none;
+      background-color: var(--surface-bg-elevated-color);
+    }
+
+    input,
+    textarea {
+      font-family: var(--font-primary);
+      font-weight: 600;
+      font-size: 1.6rem;
+      border: none;
+      background-color: transparent;
+      padding: 1.3rem 0;
+      height: 100%;
+      width: 100%;
+
+      &:not(:disabled) {
+        cursor: text;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      @include media(xs) {
+        font-size: 1.4rem;
+        padding: 1.2rem;
+      }
+    }
+
+    &.error {
+      box-shadow: 0 0 0 0.4rem var(--error-box-shadow-color);
+    }
+
+    input {
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+
+    &:has(.prefix) {
+      input {
+        padding-left: 0.8rem;
+      }
+    }
+
+    &:has(.suffix) {
+      input {
+        padding-right: 0.8rem;
+      }
+    }
+  }
+}
