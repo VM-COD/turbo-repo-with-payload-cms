@@ -11,6 +11,19 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./atoms": {
+      "require": "./dist/atoms/index.js",
+      "import": "./dist/atoms/index.mjs",
+      "types": "./dist/atoms/index.d.ts"
+    },
+    "./atoms/*": {
+      "require": "./dist/atoms/*/index.js",
+      "import": "./dist/atoms/*/index.mjs",
+      "types": "./dist/atoms/*/index.d.ts"
+    }
+  },
   "license": "MIT",
   "scripts": {
     "build": "tsup",
