@@ -1,5 +1,6 @@
 import React from 'react';
 import { ICardConfig } from './Card.model.js';
+import './Card.scss';
 
 const Card: React.FC<ICardConfig> = ({ heading, type }: ICardConfig) => {
   return (
