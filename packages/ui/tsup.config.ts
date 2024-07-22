@@ -1,9 +1,14 @@
 import { defineConfig, type Options } from "tsup";
-import { sassPlugin } from 'esbuild-sass-plugin';
+import { sassPlugin, postcssModules } from 'esbuild-sass-plugin';
 import svgrPlugin from 'esbuild-plugin-svgr';
 
 export default defineConfig((options: Options) => ({
-    esbuildPlugins: [svgrPlugin(), sassPlugin()],
+    esbuildPlugins: [svgrPlugin(), sassPlugin({
+        transform: postcssModules({
+            scopeBehaviour: "global"
+            // ...put here the options for postcss-modules: https://github.com/madyankin/postcss-modules
+        })
+    })],
     treeshake: true,
     minify: true,
     clean: true,
