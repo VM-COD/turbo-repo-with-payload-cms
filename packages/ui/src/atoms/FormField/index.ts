@@ -1,2 +1,2 @@
-export { default as FromField } from './FormField';
+export { default as FormField } from './FormField';
 export * from './FormField.model';
