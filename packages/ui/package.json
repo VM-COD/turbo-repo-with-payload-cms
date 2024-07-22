@@ -25,7 +25,7 @@
   "scripts": {
     "build": "tsup",
     "lint": "eslint src/",
-    "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
+    "dev": "tsup --watch",
     "check-types": "tsc --noEmit"
   },
   "peerDependencies": {
