@@ -1,5 +1,7 @@
 import React from 'react';
-import { Card, Icon, Icons, IconSize } from "@repo/ui";
+import { Card } from "@repo/ui/atoms/Card";
+import { Icon } from "@repo/ui/atoms/Icon";
+import { Icons, IconSize } from "@repo/ui/atoms";
 // import DatePickerInput from '@repo/ui/datepicker';
 
 function Dashboard() {
