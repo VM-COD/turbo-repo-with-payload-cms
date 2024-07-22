@@ -27,7 +27,7 @@ export default defineConfig((options: Options) => ({
     entry: [
         "./src/index.ts", // import { Card } from "@repo/ui/atoms/Card";
         "./src/atoms/index.ts", // import { Icons, IconSize } from "@repo/ui/atoms";
-        "./src/atoms/Card/index.ts" // import { Icon } from "@repo/ui/atoms/Icon";
+        "./src/atoms/**/index.ts" // import { Icon } from "@repo/ui/atoms/Icon";
     ],
     format: ['cjs', 'esm'],
     dts: true,
