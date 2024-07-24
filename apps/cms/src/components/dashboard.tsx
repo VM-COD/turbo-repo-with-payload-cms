@@ -12,6 +12,7 @@ function Dashboard() {
         <div className="dashboard__group">
           <h2 className="dashboard__label pl-8">Dashboard</h2>
           <Card heading='Card' type='primary' />
+          <Icon name={Icons.SYU_DARK_LOGO} size={IconSize.lg} cssClasses='pl-8' />
           <Icon name={Icons.BULB_ICON} size={IconSize.sm} cssClasses='pl-8' />
           {/* <DatePickerInput></DatePickerInput> */}
         </div>
