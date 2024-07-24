@@ -1,5 +1,6 @@
 export enum Icons {
-  BULB_ICON = 'bulb-icon'
+  BULB_ICON = 'bulb-icon',
+  SYU_DARK_LOGO = 'syu-dark-logo'
 }
 
 export enum IconSize {
