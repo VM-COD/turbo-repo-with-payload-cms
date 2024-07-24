@@ -1,5 +1,4 @@
 export enum Icons {
-  SYU_DARK_LOGO = 'syu-dark-logo',
   BULB_ICON = 'bulb-icon'
 }
 
