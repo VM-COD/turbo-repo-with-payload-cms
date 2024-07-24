@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card, Icon, Icons, IconSize } from "@repo/ui";
+import { Card, Icon, Icons, IconSize } from "@repo/ui/atoms";
 
 function Gradient({
   conic,
