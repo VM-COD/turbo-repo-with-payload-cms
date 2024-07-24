@@ -34,6 +34,7 @@ export default defineConfig((options: Options) => ({
     external: ['react'],
     splitting: false,
     sourcemap: false,
+    bundle: true,
     injectStyle: true,
     ...options,
 }));
