@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconProps } from './icon.model';
+import { IconProps } from '../models/icon.model';
 
 const BulbIcon: React.FC<IconProps> = props => {
   return (
